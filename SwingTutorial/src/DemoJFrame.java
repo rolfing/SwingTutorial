@@ -23,13 +23,13 @@ public class DemoJFrame {
 		});
 	}
 		public void startUp(){
-		JLabel text= new JLabel("This is a Swing Frame",JLabel.CENTER);
+		JLabel text= new JLabel("Swing Frame",JLabel.CENTER);
 		text.setForeground(Color.RED);
 		text.setFont(new Font("serif", Font.BOLD, 42));		
 		JFrame frame = new JFrame("Welcome to Swing Training");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(text);
-		//
+		// using frame.pack will resize the Frame just to fit what is inside.
 		frame.pack();
 		frame.setVisible(true);
 	}
