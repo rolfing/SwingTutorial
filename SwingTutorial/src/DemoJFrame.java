@@ -1,6 +1,7 @@
 import java.awt.Color;
 import java.awt.Font;
 
+import javax.swing.BorderFactory;
 import javax.swing.Icon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -25,7 +26,10 @@ public class DemoJFrame {
 		public void startUp(){
 		JLabel text= new JLabel("Swing Frame",JLabel.CENTER);
 		text.setForeground(Color.RED);
-		text.setFont(new Font("serif", Font.BOLD, 42));		
+		text.setFont(new Font("serif", Font.BOLD, 42));	
+		// Here we I added a border around the text
+		text.setBorder(BorderFactory.createEmptyBorder(10, 10, 10,10));
+		
 		JFrame frame = new JFrame("Welcome to Swing Training");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(text);
